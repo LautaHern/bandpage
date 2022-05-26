@@ -1,0 +1,300 @@
+/* Márgenes en general para todas las páginas, letra y color por defecto */
+
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #bbf;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    place-items: center;
+}
+
+.header, .main, .aside, .footer {
+	padding: 30px;
+	
+}
+
+iframe {
+	margin: 20px;
+}
+
+/* .header, .main, .aside, .footer {
+	border:  solid 2px #000;
+} */
+
+/* ######################################################################### */
+
+/* Media query para el responsive */
+
+@media screen and (min-width: 420px) {
+	.content {
+		display: grid;
+		flex-direction: column;
+	}
+
+	.header {
+		grid-column: 1 / 6;
+	}
+
+	.main {
+		grid-row: 2 / 6;
+		grid-column: 1 / 4;
+	}
+
+	.aside {
+		grid-row: 2 / 6;
+	}
+
+	.footer {
+		grid-row: 6 / 7;
+		grid-column: 1 / 6;
+	}
+
+	/* #im {
+		height: 300px;
+		width: 800px;
+	} */
+}
+
+/* ######################################################################### */
+
+/* Imagen de fondo de las páginas */
+
+body {
+	background-image: url('../images/bd.jpeg');
+}
+
+
+/* Menú con imagen de fondo y efecto de opacidad */
+
+.titulo {
+	padding: 20px;	
+	font-size: 40px;
+}
+
+label, img {
+	filter: drop-shadow(16px 16px 20px #ccf);
+}
+
+#h1 {
+	background-image: url('../images/fond.jpg');
+	opacity: 0.95;
+	border-radius: 20px;
+	margin-top: 10px;
+
+}
+
+ul {
+	margin-top: 10px;
+	background-image: url('../images/fond.jpg');
+	opacity: 0.95;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+/* .footer {
+	filter: drop-shadow(5px #ccf);
+}
+ */
+/* Logo para las páginas */
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	opacity: 0.95;
+}
+
+/* Tablas  */
+
+table {
+	display: inline;
+	padding: 2px;
+}
+
+table, td, th, p {
+	font-size: 14px;
+	opacity: 0.95;
+	background-image: url('../images/fond.jpg');
+	border-style: double;
+	border-width: 7px;
+	border-radius: 24px;
+	line-height: 32px;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+}
+
+td, th {
+	padding: 4px 8px 4px 8px;
+}
+
+/* ######################################################################### */
+
+/* Listas  */
+
+.fixed {
+	position: sticky;
+	top: 20px;
+	z-index: 1000;
+}
+
+ul li {
+	list-style: none;
+	border-style: none;
+}
+
+li {
+	display: inline-block;
+	position: relative;	
+	font-size: 20px;
+	padding: 5px;
+	border-style: ridge;
+	border-radius: 10px;
+	border-width: 5px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ######################################################################### */
+
+/* Efecto sobre el texto de las listas */
+
+li:hover, .foo li:hover {
+	filter: drop-shadow(0.5px 0.5px 1px #fff);
+	opacity: 0.95;
+}
+
+/* Elementos */
+
+p {
+	opacity: 0.85;
+	position: relative;
+	margin: 20px;
+	font-size: 10px;
+
+}
+
+/* Texto iluminado al pasar el mouse */
+
+p:hover {
+	opacity: 0.95;
+	color: #fff;
+}
+
+/* ######################################################################### */
+
+/* Elementos del form */
+
+#encuesta {
+	margin: 5px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+label, input, fieldset{
+	padding: 5px;
+}
+
+input {
+	color: #000;
+	display: inline;
+}
+
+select, option {
+	color: #000;
+	letter-spacing: 3px;
+	font-size: 16px;
+}
+
+
+#cont {
+	display: inline-block;
+	opacity: 0.95;
+	background-image: url('../images/fond.jpg');
+	border-radius: 10px;
+	padding: 10px;
+	filter: drop-shadow(16px 16px 20px #aaf);
+}
+
+#comment {
+	display: inline-block;
+	background-image: url('../images/fond.jpg');
+	opacity: 0.95;
+	border-radius: 10px;
+	font-size: 1.2em;
+	letter-spacing: 7px;
+	padding: 20px;
+	filter: drop-shadow(16px 16px 20px #aaf);
+}
+
+button {
+	color: #000;
+	height: 20px;
+	width: 80px;
+}
+
+
+img {
+	border-style: ridge;
+	border-radius: 25px;
+	border-width: 8px;
+	margin: 4px;
+	position: relative;
+	opacity: 0.95;
+}
+
+/* ######################################################################### */
+
+/* Un filtro que se me ocurrió probar en una de las imágenes */
+
+.im {
+	filter: blur(5px);
+	filter: brightness(0.4);
+	filter: contrast(200%);
+	filter: drop-shadow(16px 16px 20px blue);
+	filter: grayscale(50%);
+	filter: hue-rotate(90deg);
+	filter: invert(75%);
+	filter: opacity(25%);
+	filter: saturate(30%);
+	filter: sepia(60%);
+	height: 200px;
+	width: 380px;
+	margin-bottom: 50px;
+}
+
+textarea {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-image: url('../images/fond.jpg');
+	color: #aaf;
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	text-align: left;
+	opacity: 0.95;
+	width: 70%;
+	padding: 15px;
+}
+
+#com {
+	padding: 15px;
+}
+
+/* Puntero */
+
+li, img {
+	cursor: pointer;
+}
+
+:root {
+	--animate-duration: 1.5s;
+	--animate-delay: 2s;
+}
