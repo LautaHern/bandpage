@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="../images/icon.jpg">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<title>Contacto</title>
@@ -12,8 +13,10 @@
 	<body>
 		<div id="h1"><div class="titulo animate__animated animate__flip animate__slow">¿Tenés preguntas, sugerencias? Contanos</div></div>
 		<div class="content">
-			<header class="header fixed">
-				<ul class="foo" id="lista1">
+			<header class="header" data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="500">
+				<ul class="foo">
 					<li><a href="../index.html">Punto de partida</a></li>
 					<li><a href="discografia.html">Discografía recomendada</a></li>
 					<li><a href="videos.html">Videos</a></li>
@@ -23,18 +26,23 @@
 			</header>
 			<article class="main">
 				<section>
-					<img src="../images/bass.jpg" alt="Triple Neck Wal Bass" class="im">
+					<img src="../images/bd.jpeg" alt="Prog Albums" class="main__imagen" data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="500">
 				</section>
-				<section id="cont">
-					<form action="#">
+				<section class="main__contacto">
+					<form class="main__form" action="#">
 						<div id="encuesta">
 							<label for="nombre">Nombre </label>
-						<input type="text" name="" required>
-						<br>
-						<label for="mail">Mail</label>
-						<input type="mail" name="" required>
+							<input type="text" name="" required>
+							<br>
+							<label for="mail">Mail</label>
+							<input type="mail" name="" required>
 						</div>
-						<fieldset>
+						<fieldset data-aos="fade-zoom-in"
+							data-aos-easing="ease-in-back"
+							data-aos-delay="300"
+							data-aos-offset="0">
 							<legend>Género musical favorito</legend>
 							<select name="genero">
 								<option value="">Elegí una opción</option>
@@ -56,16 +64,28 @@
 				</section>
 				<br>
 				<section>
-					<textarea name="texto" cols="60" rows="20" placeholder="Dejanos tu comentario..."></textarea>
-					<div id="comment">
-						<label for="suscribe">¿Querés recibir las últimas novedades de la página? </label>
+					<textarea name="texto" cols="60" rows="20" placeholder="Dejanos tu comentario..." data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-delay="300"
+					data-aos-offset="0"></textarea>
+					<div class="main__suscribe">
+						<label for="suscribe" id="suscribe">¿Querés recibir las últimas novedades de la página? </label>
 						<input type="checkbox" name="">
 						<button type="submit">Enviar</button>
 					</div>
 				</section>
 			</article>
 			<aside class="aside">
-				<img src="../images/icon.jpg">
+				<div class="card__container" data-aos="zoom-out-left">
+					<div class="card">
+						<div class="front">
+							<img class="img" src="../images/icon.jpg" alt="">
+						</div>
+						<div class="back">
+							<img class="img" src="../images/bd.jpeg" alt="">
+						</div>
+					</div>
+				</div>
 			</aside>
 			<footer class="footer">
 				<ul>
@@ -75,7 +95,11 @@
 					<li><a href="canciones.html">Momentos épicos</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
-			</footer>	
+			</footer>
 		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+		AOS.init();
+		</script>
 	</body>
 </html>

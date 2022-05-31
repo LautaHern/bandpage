@@ -5,7 +5,9 @@
 	padding: 0;
 	text-align: center;
 	color: #bbf;
-	font-family: 'Orbitron', sans-serif;
+	font-family: monospace;
+	font-size: 20px;
+	box-sizing: border-box;
 }
 
 .content {
@@ -20,13 +22,86 @@
 	
 }
 
-iframe {
-	margin: 20px;
+/* ######################################################################### */
+
+/* Fondo de las páginas */
+
+body{
+  color: #222;
+  background: transparent;
+  background-image: repeating-linear-gradient(
+  	to right,
+  	 #000,  
+  	 #11a,
+  	 #66c, 
+  	 #888,
+  	 #537,
+  	 #22a,
+  	 #000,
+  	 #000,  
+  	 #11a,
+  	 #66c, 
+  	 #888,
+  	 #537,
+  	 #22a,
+  	 #000
+  	);
+  background-size: 1000%;
+  animation: fondo 10s infinite cubic-bezier(.95,.61,.18,.62) alternate-reverse;
+}
+@keyframes fondo{
+  0%{background-position: left;
+  }
+  40% {
+  	background-position: right;
+  }
+  75% {
+  	background-position: top;
+  }
 }
 
-/* .header, .main, .aside, .footer {
-	border:  solid 2px #000;
-} */
+/* ######################################################################### */
+
+/* Transform y transition sacado de Instagram xD  */
+
+.card {
+	width: 224px;
+	height: 224px;
+	position: relative;
+	background-color: transparent;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.card:hover {
+	transform: rotateY(180deg);
+}
+
+.front, .back {
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	backface-visibility: hidden;
+	display: table-row;
+	justify-content: center;
+}
+
+.front {
+	background: transparent;
+}
+
+.img {
+	width: 224px;
+	width: 100%;
+	height: 224%;
+	height: 100%;
+}
+
+.back {
+	transform: rotateY(180deg);
+	background: transparent;
+}
 
 /* ######################################################################### */
 
@@ -56,20 +131,10 @@ iframe {
 		grid-column: 1 / 6;
 	}
 
-	/* #im {
-		height: 300px;
-		width: 800px;
-	} */
+	
 }
 
 /* ######################################################################### */
-
-/* Imagen de fondo de las páginas */
-
-body {
-	background-image: url('../images/bd.jpeg');
-}
-
 
 /* Menú con imagen de fondo y efecto de opacidad */
 
@@ -96,66 +161,56 @@ ul {
 	opacity: 0.95;
 	border-radius: 20px;
 	padding: 10px;
+	height: 100%;
 }
 
-/* .footer {
-	filter: drop-shadow(5px #ccf);
-}
- */
 /* Logo para las páginas */
-
-main {
-	display: flex;
-	flex-wrap: wrap;
-	opacity: 0.95;
-}
 
 /* Tablas  */
 
 table {
 	display: inline;
-	padding: 2px;
+
 }
 
 table, td, th, p {
-	font-size: 14px;
 	opacity: 0.95;
 	background-image: url('../images/fond.jpg');
-	border-style: double;
-	border-width: 7px;
 	border-radius: 24px;
 	line-height: 32px;
 	word-spacing: 5px;
-	letter-spacing: 3px;
 }
 
 td, th {
-	padding: 4px 8px 4px 8px;
+	padding: 8px 8px 8px 8px;
 }
 
 /* ######################################################################### */
 
 /* Listas  */
 
-.fixed {
-	position: sticky;
-	top: 20px;
-	z-index: 1000;
-}
-
 ul li {
 	list-style: none;
 	border-style: none;
+	opacity: 0.7;
+	color: #fff;
+
+}
+
+ul:hover {
+	transition: all 0.7s;
+	transform: scale(1.1, 1.1) translateY(-15px);
+	opacity: 0.9;
 }
 
 li {
 	display: inline-block;
 	position: relative;	
-	font-size: 20px;
 	padding: 5px;
 	border-style: ridge;
 	border-radius: 10px;
-	border-width: 5px;	
+	border-width: 5px;
+	
 }
 
 a {
@@ -167,23 +222,29 @@ a {
 /* Efecto sobre el texto de las listas */
 
 li:hover, .foo li:hover {
-	filter: drop-shadow(0.5px 0.5px 1px #fff);
+	filter: drop-shadow(0.5px 0.5px 0.5px #fff);
 	opacity: 0.95;
+	transition: all 0.4s;
+	transform: scale(1.4, 1.4) translateY(-15px);
+	background: linear-gradient(#11a,#fff,#53f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ccf;  
 }
 
 /* Elementos */
 
 p {
-	opacity: 0.85;
-	position: relative;
-	margin: 20px;
-	font-size: 10px;
-
+	opacity: 0.65;
+	margin: 50px;
+	font-size: 18px;
+	padding: 30px;
 }
 
 /* Texto iluminado al pasar el mouse */
 
 p:hover {
+	transition: all 0.3s;
 	opacity: 0.95;
 	color: #fff;
 }
@@ -192,23 +253,27 @@ p:hover {
 
 /* Elementos del form */
 
-#encuesta {
-	margin: 5px;
-	margin-bottom: 20px;
-	padding: 5px;
+#suscribe {
+	color: #fff;
 }
 
-label, input, fieldset{
-	padding: 5px;
+label, legend {
+	color: #fff;
+}
+
+option, select, input {
+	color: #000;
+}
+
+legend {
+	padding: 10px;
 }
 
 input {
-	color: #000;
 	display: inline;
 }
 
 select, option {
-	color: #000;
 	letter-spacing: 3px;
 	font-size: 16px;
 }
@@ -230,13 +295,13 @@ select, option {
 	border-radius: 10px;
 	font-size: 1.2em;
 	letter-spacing: 7px;
-	padding: 20px;
+/* 	padding: 20px; */
 	filter: drop-shadow(16px 16px 20px #aaf);
 }
 
 button {
 	color: #000;
-	height: 20px;
+	height: 40px;
 	width: 80px;
 }
 
@@ -245,7 +310,7 @@ img {
 	border-style: ridge;
 	border-radius: 25px;
 	border-width: 8px;
-	margin: 4px;
+/* 	margin: 4px; */
 	position: relative;
 	opacity: 0.95;
 }
@@ -254,37 +319,32 @@ img {
 
 /* Un filtro que se me ocurrió probar en una de las imágenes */
 
-.im {
-	filter: blur(5px);
-	filter: brightness(0.4);
-	filter: contrast(200%);
-	filter: drop-shadow(16px 16px 20px blue);
-	filter: grayscale(50%);
-	filter: hue-rotate(90deg);
-	filter: invert(75%);
-	filter: opacity(25%);
-	filter: saturate(30%);
-	filter: sepia(60%);
-	height: 200px;
-	width: 380px;
-	margin-bottom: 50px;
+.main__imagen {
+	height: 250px;
+	width: 440px;
 }
+
+.main__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.im {
+		height: 300px;
+		width: 400px;
+	}
 
 textarea {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	border-radius: 10px;
 	background-image: url('../images/fond.jpg');
-	color: #aaf;
+	color: #fff;
 	font-size: 1.3em;
 	letter-spacing: 3px;
 	text-align: left;
-	opacity: 0.95;
 	width: 70%;
-	padding: 15px;
-}
-
-#com {
 	padding: 15px;
 }
 

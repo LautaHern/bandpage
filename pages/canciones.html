@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="../images/icon.jpg">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<title>Temas inolvidables</title>
@@ -12,8 +13,8 @@
 	<body>
 		<div id="h1"><div class="titulo animate__animated animate__flip animate__slow">Tracks que hicieron escuela</div></div>
 		<div class="content">
-			<header class="header fixed">
-				<ul class="foo" id="lista1">
+			<header class="header" data-aos="fade-down">
+				<ul class="foo">
 					<li><a href="../index.html">Punto de partida</a></li>
 					<li><a href="discografia.html">Discografía recomendada</a></li>
 					<li><a href="videos.html">Videos</a></li>
@@ -21,7 +22,7 @@
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
 			</header>
-			<article class="main">
+			<article class="main" data-aos="zoom-out">
 				<img src="../images/gen.jpg" class="im">
 				<br>
 				<table border="6" cellpadding="4" cellspacing="3">
@@ -158,7 +159,16 @@
 				</table>
 			</article>
 			<aside class="aside">
-				<img src="../images/icon.jpg">
+				<div class="card__container" data-aos="zoom-out-left">
+					<div class="card">
+						<div class="front">
+							<img class="img" src="../images/icon.jpg" alt="">
+						</div>
+						<div class="back">
+							<img class="img" src="../images/bd.jpeg" alt="">
+						</div>
+					</div>
+				</div>
 			</aside>
 			<footer class="footer">
 				<ul>
@@ -168,7 +178,11 @@
 					<li><a href="canciones.html">Momentos épicos</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
-			</footer>	
+			</footer>
 		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+		AOS.init();
+		</script>
 	</body>
 </html>
