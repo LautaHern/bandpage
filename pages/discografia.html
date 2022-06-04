@@ -3,116 +3,173 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="../images/icon.jpg">
+		<link rel="shortcut icon" href="images/icon.jpg">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
-		<title>Discos seleccionados</title>
+		<title>Tributo a los mejores discos del kcor</title>
 	</head>
 	<body>
-		<div id="h1"><div class="titulo animate__animated animate__flip animate__slow">Audiografía exquisita</div></div>
 		<div class="content">
-			<header class="header" data-aos="fade-down">
-				<ul class="foo">
-					<li><a href="../index.html">Punto de partida</a></li>
-					<li><a href="discografia.html">Discografía recomendada</a></li>
-					<li><a href="videos.html">Videos</a></li>
-					<li><a href="canciones.html">Momentos épicos</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
+			<header class="header" data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="1500">
+				<h1 class="text-center bg-gradient p-5 text-white">
+				Punto de partida del universo progresivo
+				</h1>
+				<nav class="navbar bg-gradient text-white navbar-expand-lg text-center">
+					<div class="container-fluid">
+					  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+						<ul class="navbar-nav nav-tabs me-auto mb-2 px-3">
+						  <li class="nav-item bg-gradient">
+							<a class="nav-link text-white" href="../index.html">Punto de partida</a>
+						  </li>
+						  <li class="nav-item bg-gradient">
+							<a class="nav-link text-white" href="discografia.html">Discografía seleccionada</a>
+						  </li>
+						  <li class="nav-item bg-gradient">
+							<a class="nav-link text-white" href="../pages/videos.html">Videos</a>
+						  </li>
+						  <li class="nav-item bg-gradient">
+							<a class="nav-link text-white" href="../pages/canciones.html">Momentos épicos</a>
+						  </li>
+						  <li class="nav-item bg-gradient">
+							<a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+						  </li>
+						</ul>
+						<form class="d-flex" role="search">
+							<input class="form-control me-6" type="search" placeholder="Buscar..." aria-label="Search">
+							<button class="btn btn-success" type="submit">Buscar</button>
+						  </form>
+					  </div>
+					</div>
+				  </nav>
 			</header>
 			<article class="main" data-aos="zoom-out">
 				<article>
-					<table border="7" cellpadding="5" cellspacing="5">
-						<tr>
-							<th></th>
-							<th></th>
-							<th></th>
-						</tr>
-						<tr>
-							<td>Álbum</td>
-							<td>Artista</td>
-							<td>Año</td>
-						</tr>
-						<tr>
-							<td>Sgt. Pepper's Lonely Hearts Club Band</td>
-							<td>The Beatles</td>
-							<td>1967</td>
-						</tr>
-						<tr>
-							<td>Ars Longa Vita Brevis</td>
-							<td>The Nice</td>
-							<td>1968</td>
-						</tr>
-						<tr>
-							<td>In the Court of the Crimson King</td>
-							<td>King Crimson</td>
-							<td>1969</td>
-						</tr>
-						<tr>
-							<td>Third</td>
-							<td>Soft Machine</td>
-							<td>1970</td>
-						</tr>
-						<tr>
-							<td>Acquiring the Taste</td>
-							<td>Gentle Giant</td>
-							<td>1971</td>
-						</tr>
-						<tr>
-							<td>Aqualung</td>
-							<td>Jethro Tull</td>
-							<td>1972</td>
-						</tr>
-						<tr>
-							<td>Selling England by the Pound</td>
-							<td>Genesis</td>
-							<td>1973</td>
-						</tr>
-						<tr>
-							<td>Relayer</td>
-							<td>Yes</td>
-							<td>1974</td>
-						</tr>
-						<tr>
-							<td>Wish You Were Here</td>
-							<td>Pink Floyd</td>
-							<td>1975</td>
-						</tr>
-						<tr>
-							<td>2112</td>
-							<td>Rush</td>
-							<td>1976</td>
-						</tr>
-					</table>
+					<figure class="figure">
+						<img src="../images/queen.gif" class="figure-img img-fluid rounded" alt="queen">
+						<figcaption class="figure-caption text-white text-center">Me llamaba Brian McGee. Me quedaba escuchando a Queen</figcaption>
+					  </figure>
+					<table class="table table-dark table-striped table-bordered text-center">
+						<thead>
+						  <tr>
+
+							<th scope="col">Álbum</th>
+							<th scope="col">Artista</th>
+							<th scope="col">Año</th>
+						  </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Sgt. Pepper's Lonely Hearts Club Band</td>
+								<td>The Beatles</td>
+								<td>1967</td>
+								</tr>
+							  <tr>
+								<td>Ars Longa Vita Brevis</td>
+								<td>The Nice</td>
+								<td>1968</td>
+							  </tr>
+							  <tr>
+								<td>In the Court of the Crimson King</td>
+								<td>King Crimson</td>
+								<td>1969</td>
+							  </tr>
+							  <tr>
+								<td>Third</td>
+								<td>Soft Machine</td>
+								<td>1970</td>
+							  </tr>
+							  <tr>
+								<td>Acquiring the Taste</td>
+								<td>Gentle Giant</td>
+								<td>1971</td>
+							  </tr>
+							  <tr>
+								<td>Aqualung</td>
+								<td>Jethro Tull</td>
+								<td>1972</td>
+							  </tr>
+							  <tr>
+								<td>Selling England by the Pound</td>
+								<td>Genesis</td>
+								<td>1973</td>
+							  </tr>
+							  <tr>
+								<td>Relayer</td>
+								<td>Yes</td>
+								<td>1974</td>
+							  </tr>
+							  <tr>
+								<td>Wish You Were Here</td>
+								<td>Pink Floyd</td>
+								<td>1975</td>
+							  </tr>
+							  <tr>
+								<td>2112</td>
+								<td>Rush</td>
+								<td>1976</td>
+							  </tr>
+						</tbody>
+					  </table>
 				</article>
 			</article>
 			<aside class="aside">
-				<div class="card__container" data-aos="zoom-out-left">
-					<div class="card">
-						<div class="front">
-							<img class="img" src="../images/icon.jpg" alt="">
-						</div>
-						<div class="back">
-							<img class="img" src="../images/bd.jpeg" alt="">
+				<figure class="figure">
+					<div class="card__container" data-aos="zoom-out-left">
+						<div class="card">
+							<div class="front">
+								<img class="img" src="../images/icon.jpg" alt="">
+							</div>
+							<div class="back">
+								<img class="img" src="../images/bdd.jpeg" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
+				  </figure>
+
 			</aside>
-			<footer class="footer">
-				<ul>
-					<li><a href="../index.html">Punto de partida</a></li>
-					<li><a href="discografia.html">Discografía recomendada</a></li>
-					<li><a href="videos.html">Videos</a></li>
-					<li><a href="canciones.html">Momentos épicos</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</footer>	
+			<footer>
+				<div>
+					<ul class="nav nav-tabs px-3 justify-content-center">
+						<li class="nav-item bg-gradient">
+						  <a class="nav-link text-white" href="../index.html">Punto de partida</a>
+						</li>
+						<li class="nav-item bg-gradient">
+						  <a class="nav-link text-white" href="discografia.html">Discografía seleccionada</a>
+						</li>
+						<li class="nav-item bg-gradient">
+						  <a class="nav-link text-white" href="../pages/videos.html">Videos</a>
+						</li>
+						<li class="nav-item bg-gradient">
+						  <a class="nav-link text-white" href="../pages/canciones.html">Momentos épicos</a>
+						</li>
+						<li class="nav-item bg-gradient">
+						  <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+						</li>
+					  </ul>
+				</div>
+				<div class="navbar me-auto">
+					<div></div>
+					<img class="social" src="../images/png/001-facebook.png" alt="">
+					<img class="social" src="../images/png/002-instagram.png" alt="">
+					<img class="social" src="../images/png/003-tik-tok.png" alt="">
+					<img class="social" src="../images/png/004-whatsapp.png" alt="">
+					<img class="social" src="../images/png/005-gorjeo.png" alt="">
+					<div></div>
+				</div>
+				
+			</footer>
 		</div>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 		AOS.init();
 		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	</body>
 </html>
