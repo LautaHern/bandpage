@@ -1,0 +1,15 @@
+/* Animación de colores de fondo */
+
+body {
+    animation: fondo 30s infinite cubic-bezier(.95,.61,.18,.62) alternate-reverse;
+    @keyframes fondo{
+        0%{background-position: left;
+        }
+        40% {
+            background-position: right;
+        }
+        75% {
+            background-position: top;
+        }
+      }
+}

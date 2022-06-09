@@ -8,14 +8,26 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Tributo a los mejores discos del kcor</title>
+		<title>Dale a la playlist y seguí navegando...Tributo a los mejores discos del kcor...</title>
+		<script type="text/javascript">
+
+			let titleText = document.title;
+			
+			function titleMarquee() {
+			
+			 titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+			 document.title = titleText;
+			 setTimeout("titleMarquee()", 80);
+			 }
+			
+			</script>
 	</head>
-	<body>
+	<body onload="titleMarquee()">
 		<div class="content">
 			<header class="header" data-aos="fade-down"
 				data-aos-easing="linear"
 				data-aos-duration="1500">
-				<h1 class="text-center bg-gradient p-5 text-white">
+				<h1 class="text-center bg-gradient p-5">
 				Punto de partida del universo progresivo
 				</h1>
 				<nav class="navbar bg-gradient text-white navbar-expand-lg text-center">
@@ -23,45 +35,34 @@
 					  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					  </button>
-					  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-						<ul class="navbar-nav nav-tabs me-auto mb-2 px-3">
+					  <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+						<ul class="navbar-nav nav-tabs">
 						  <li class="nav-item bg-gradient">
-							<a class="nav-link text-white" href="index.html">Punto de partida</a>
+							<a class="nav-link text-white" href="index.html" target="_blank">Punto de partida</a>
 						  </li>
 						  <li class="nav-item bg-gradient">
-							<a class="nav-link text-white" href="./pages/discografia.html">Discografía seleccionada</a>
+							<a class="nav-link text-white" href="./pages/discografia.html" target="_blank">Discografía seleccionada</a>
 						  </li>
 						  <li class="nav-item bg-gradient">
-							<a class="nav-link text-white" href="./pages/videos.html">Videos</a>
+							<a class="nav-link text-white" href="./pages/videos.html" target="_blank">Videos</a>
 						  </li>
 						  <li class="nav-item bg-gradient">
-							<a class="nav-link text-white" href="./pages/canciones.html">Momentos épicos</a>
+							<a class="nav-link text-white" href="./pages/canciones.html" target="_blank">Momentos épicos</a>
 						  </li>
 						  <li class="nav-item bg-gradient">
-							<a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
+							<a class="nav-link text-white" href="./pages/contacto.html" target="_blank">Contacto</a>
 						  </li>
 						</ul>
-						<form class="d-flex" role="search">
-						  <input class="form-control me-6" type="search" placeholder="Buscar..." aria-label="Search">
-						  <button class="btn btn-success" type="submit">Buscar</button>
-						</form>
+						
 					  </div>
 					</div>
 				  </nav>
 			</header>
 			<main class="container" data-aos="zoom-out">
 				<div class="row">
-					<div class="border col-xs-12 col-md-6 col-lg-6 p-5 bg-primary text-dark text-center data-aos="zoom-out-right">
-						Bienvenidos a la mejor web que pude hacer hasta el momento en un lapsus de insomnio y copy paste desenfrenado. Esto es un texto de prueba, si estás
-						leyendo es porque querés corroborar que se apliquen correctamente los estilos, destinados a su vez a embellecer y dotar de cualidades aparentes a
-						este pobre aspirante a diseñador, lo cual no lo hace mejor sino que lo deja en evidencia en sus intenciones, y en última instancia lo relega y limita
-						a un simple voyeur del flujo de datos, un onanista de la información verosímil, un exacrable ejemplo del interés infundando, una pauperización de la 
-						ética aplicada a la consecución de fines no sociales.
-						<br>
-						Es sábado y pintó hacer toda la página en Bootstrap así que ya fue, este tiempo y lugar no me lo 
-						quita nadie, así que piénselo dos veces antes de menospreciar a un idealista de la maquetación. El congul está maldito...
-					</div>
-					<div class="border col-xs-12 col-md-6 col-lg-6 p-5 bg-dark text-white text-center mx-auto data-aos="zoom-out-left">
+					<div class="txt-copado border col-xs-12 col-md-6 col-lg-6 p-5 bg-dark text-white text-center mx-auto" data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="2500">
 						Bienvenidos a la mejor web que pude hacer hasta el momento en un lapsus de insomnio y copy paste desenfrenado. Esto es un texto de prueba, si estás
 						leyendo es porque querés corroborar que se apliquen correctamente los estilos, destinados a su vez a embellecer y dotar de cualidades aparentes a
 						este pobre aspirante a diseñador, lo cual no lo hace mejor sino que lo deja en evidencia en sus intenciones, y en última instancia lo relega y limita
@@ -105,6 +106,9 @@
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 					</button>
+				</div>
+				<div class="row m-4">
+					<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Q5j8Jy1pAvbRRcNgLuVrK?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 				</div>	
 			</main>
 			<aside>
@@ -123,21 +127,21 @@
 				
 			</aside>
 			<footer>
-				<div>
+				<div class="foo">
 					<ul class="nav nav-tabs px-3 justify-content-center">
-						<li class="nav-item bg-gradient">
+						<li class="nav-item">
 						  <a class="nav-link text-white" href="index.html">Punto de partida</a>
 						</li>
-						<li class="nav-item bg-gradient">
+						<li class="nav-item">
 						  <a class="nav-link text-white" href="./pages/discografia.html">Discografía seleccionada</a>
 						</li>
-						<li class="nav-item bg-gradient">
+						<li class="nav-item">
 						  <a class="nav-link text-white" href="./pages/videos.html">Videos</a>
 						</li>
-						<li class="nav-item bg-gradient">
+						<li class="nav-item">
 						  <a class="nav-link text-white" href="./pages/canciones.html">Momentos épicos</a>
 						</li>
-						<li class="nav-item bg-gradient">
+						<li class="nav-item">
 						  <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
 						</li>
 					  </ul>

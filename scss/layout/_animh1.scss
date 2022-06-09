@@ -1,0 +1,28 @@
+/* Animación del título */
+
+h1 {
+    @keyframes letra {
+        0% {
+            letter-spacing: normal;
+            color: $color-h1;
+        }
+        20% {
+            color: $color-h2;
+            filter: blur(0.5px);
+        }
+        35% {
+            letter-spacing: 0.5px;
+            color: $color-h3;
+        }
+        65% {
+            color: $color-h4;
+            filter: blur(1px)
+        }
+        100% {
+            letter-spacing: 1px;
+            color: $color-h5;
+            filter: blur(3px);
+        }
+    }
+    animation: letra 15s infinite ease-in-out alternate-reverse;
+}
