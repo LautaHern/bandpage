@@ -1,103 +1,115 @@
-/* Márgenes en general para todas las páginas, letra y color por defecto */
-
+@charset "UTF-8";
+/* Vínculos con los scss */
+/* Reseteo de estilos */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Revalia&display=swap");
 * {
-	margin: 0;
-	padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
+/* Alineación de elementos de la página */
 .content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	place-items: center;
-}
-
-
-/* ######################################################################### */
-
-/* Transform y transition sacado de Instagram xD  */
-
-.card {
-	width: 224px;
-	height: 224px;
-	position: relative;
-	background-color: transparent;
-	transition: transform 0.8s;
-	transform-style: preserve-3d;
-}
-
-.card:hover {
-	transform: rotateY(180deg);
-}
-
-.front, .back {
-	height: 100%;
-	width: 100%;
-	background: #fff;
-	position: absolute;
-	backface-visibility: hidden;
-	display: table-row;
-	justify-content: center;
-}
-
-.front {
-	background: transparent;
-}
-
-
-
-.back {
-	transform: rotateY(180deg);
-	background: transparent;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-items: center; }
 
 .img {
-	width: 224px;
-	width: 100%;
-	height: 224%;
-	height: 100%;
-}
+  width: 224px;
+  width: 100%;
+  height: 224%;
+  height: 100%;
+  cursor: pointer; }
 
-/* ######################################################################### */
+/* Fuentes */
+/* Colores de fondo */
+/* Colores del título */
+/* Colores de fondo de la página */
+body {
+  color: #222;
+  background: transparent;
+  background-image: repeating-linear-gradient(to right, rgba(29, 21, 37, 0.948), rgba(161, 175, 173, 0.936), rgba(20, 42, 61, 0.941), rgba(179, 110, 32, 0.879), rgba(23, 46, 57, 0.818), rgba(213, 30, 30, 0.882), rgba(14, 15, 49, 0.958));
+  background-size: 1000%; }
 
-/* Fondo de las páginas */
+.txt-copado {
+  transform: scale(5); }
 
-body{
-	color: #222;
-	background: transparent;
-	background-image: repeating-linear-gradient(
-		to right,  
-		 rgba(29, 21, 37, 0.948),
-		 rgba(19, 72, 62, 0.936), 
-		 rgba(20, 42, 61, 0.941),
-		 rgba(40, 17, 63, 0.879),
-		 rgba(23, 46, 57, 0.818),
-		 rgba(12, 46, 68, 0.882),  
-		 rgba(14, 15, 49, 0.958)
-		);
-	background-size: 1000%;
-	animation: fondo 8s infinite cubic-bezier(.95,.61,.18,.62) alternate-reverse;
-  }
-  @keyframes fondo{
-	0%{background-position: left;
-	}
-	40% {
-		background-position: right;
-	}
-	75% {
-		background-position: top;
-	}
-  }
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px; }
 
-/* ######################################################################### */
-/* 
-.carr {
-	height: 400px;
-	width: 300px;
-} */
+nav ul {
+  list-style: none; }
+  nav ul li {
+    font-family: "Revalia", cursive;
+    font-size: 17px;
+    padding: 3px;
+    line-height: 1.5; }
+    nav ul li:hover {
+      filter: drop-shadow(0.5px 0.5px 0.5px #fff);
+      opacity: 0.95;
+      transition: all 0.25s;
+      transform: scale(1.001, 1.001) translateY(-2px); }
 
-/* Puntero */
+.foo ul {
+  padding: 2px; }
+  .foo ul li {
+    font-family: monospace; }
 
-li, img {
-	cursor: pointer;
-}
+/* Animación del título */
+h1 {
+  animation: letra 15s infinite ease-in-out alternate-reverse; }
+
+@keyframes letra {
+  0% {
+    letter-spacing: normal;
+    color: #f0bb35; }
+  20% {
+    color: #1f0da1;
+    filter: blur(0.5px); }
+  35% {
+    letter-spacing: 0.5px;
+    color: #d74035; }
+  65% {
+    color: rgba(235, 226, 225, 0.915);
+    filter: blur(1px); }
+  100% {
+    letter-spacing: 1px;
+    color: #498334;
+    filter: blur(3px); } }
+
+/* Animación de colores de fondo */
+body {
+  animation: fondo 30s infinite cubic-bezier(0.95, 0.61, 0.18, 0.62) alternate-reverse; }
+
+@keyframes fondo {
+  0% {
+    background-position: left; }
+  40% {
+    background-position: right; }
+  75% {
+    background-position: top; } }
+
+/* Animación del logo de página */
+.card {
+  width: 224px;
+  height: 224px;
+  position: relative;
+  background-color: transparent;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; }
+  .card:active {
+    transform: rotateY(180deg); }
+
+.front, .back {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  backface-visibility: hidden;
+  display: table-row;
+  justify-content: center;
+  background: transparent; }
+
+.back {
+  transform: rotateY(180deg); }

@@ -1,0 +1,17 @@
+nav {
+    ul {
+        list-style: none;
+        li {
+            font-family: $botones;
+            font-size: 17px;
+            padding: 3px;
+            line-height: 1.5;
+            &:hover {
+            filter: drop-shadow(0.5px 0.5px 0.5px #fff);
+	        opacity: 0.95;
+	        transition: all 0.25s;
+	        transform: scale(1.001, 1.001) translateY(-2px);  
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/* Animación del logo de página */
+
+.card {
+    width: 224px;
+	height: 224px;
+	position: relative;
+	background-color: transparent;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+    &:active {
+	transform: rotateY(180deg);
+    }
+}
+	  
+.front, .back {
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	backface-visibility: hidden;
+	display: table-row;
+	justify-content: center;
+    background: transparent;
+}
+
+.back {
+	transform: rotateY(180deg);
+}
