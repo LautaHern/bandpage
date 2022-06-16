@@ -1,4 +1,8 @@
+@mixin tit-font($fuente, $tamano) {
+    font-family: $fuente;
+    font-size: $tamano;
+}
+
 h1 {
-    font-family: $titulo;
-    font-size: 50px;
+    @include tit-font($titulo, 50px);
 }
