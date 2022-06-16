@@ -1,0 +1,17 @@
+{
+  "name": "Tributo al kcor",
+  "version": "1.7",
+  "description": "La mejor web de la cuadra que no trata sobre cumbia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Lauta, another Lauta, merge of Lautas",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

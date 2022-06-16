@@ -12,7 +12,7 @@
     }
 }
 	  
-.front, .back {
+.front {
 	height: 100%;
 	width: 100%;
 	background: #fff;
@@ -24,5 +24,6 @@
 }
 
 .back {
+	@extend .front;
 	transform: rotateY(180deg);
 }
