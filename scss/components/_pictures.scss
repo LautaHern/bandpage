@@ -1,0 +1,57 @@
+/* Flex y diseño de imáganes de la página "Canciones" */
+
+.flex-container {
+	margin: 40px;
+	div {
+		height: 450px;
+		width: 200px;
+		box-sizing: border-box;
+		&:hover > div {
+				text-shadow: 
+							rgb(29, 160, 174) 0px 0px 5px, 
+							rgb(136, 30, 171) 0px 0px 10px, 
+							rgb(40, 4, 43) 0px 0px 15px, 
+							#4c2dff 0px 0px 20px, 
+							#882dff 0px 0px 30px, 
+							#FF2D95 0px 0px 40px, 
+							#2d30ff 0px 0px 50px, 
+							#4e0f84 0px 0px 75px;
+						}
+		div {
+			height: 200px;
+			color: #fff;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 2.5px;
+			div {
+				height: 100px;
+				padding-top: 20px;
+			}
+		img {
+			height: 200px;
+			width: 200px;
+			border-radius: 20px;
+			transition: 0.3s;
+			&:hover {
+				transition: 0.2s;
+				transform: scale(1.07);
+				filter: brightness(1.1);;
+				}
+			}
+		}
+	}
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 70px;
+	justify-content: center;
+}
+
+.iframe {
+	margin-bottom: 80px;
+}
+
+.flex-item {
+	text-align: center;
+}
+

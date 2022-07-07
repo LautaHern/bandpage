@@ -1,0 +1,46 @@
+/* Botones de la página "Canciones" */
+
+.btn-detail {
+    background: #7b34d9;
+    background-image: -webkit-linear-gradient(top, #7b34d9, #213744);
+    background-image: -moz-linear-gradient(top, #7b34d9, #213744);
+    background-image: -ms-linear-gradient(top, #7b34d9, #213744);
+    background-image: -o-linear-gradient(top, #7b34d9, #213744);
+    background-image: linear-gradient(to bottom, #7b34d9, #213744);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    text-shadow: 4px 13px 11px #9a30c7;
+    -webkit-box-shadow: 0px 11px 15px #5634c7;
+    -moz-box-shadow: 0px 11px 15px #5634c7;
+    box-shadow: 0px 11px 15px #5634c7;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    margin-top: -20px;
+    padding: 6px 40px; 
+    text-decoration: none;
+    border: none;
+  }
+  
+  .btn-detail:hover {
+    background: #8d26ad;
+    background-image: -webkit-linear-gradient(top, #8d26ad, #1c5f8c);
+    background-image: -moz-linear-gradient(top, #8d26ad, #1c5f8c);
+    background-image: -ms-linear-gradient(top, #8d26ad, #1c5f8c);
+    background-image: -o-linear-gradient(top, #8d26ad, #1c5f8c);
+    background-image: linear-gradient(to bottom, #8d26ad, #1c5f8c);
+    text-decoration: none;
+    text-shadow: 
+                rgb(29, 160, 174) 0px 0px 5px,
+                rgb(136, 30, 171) 0px 0px 10px,
+                #FFF 0px 0px 15px, 
+                #4c2dff 0px 0px 20px,
+                #882dff 0px 0px 30px, 
+                #FF2D95 0px 0px 40px, 
+                #2d30ff 0px 0px 50px, 
+                #4e0f84 0px 0px 75px;
+    transition: 0.23s;
+    transform: scale(1.07);
+  }
