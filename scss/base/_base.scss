@@ -14,3 +14,11 @@
 	height: 100%;
 	cursor: pointer;
 }
+
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
+}
