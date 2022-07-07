@@ -1,0 +1,35 @@
+/* Nav adaptativo */
+
+nav {
+    ul {
+        list-style: none;
+        li {
+            font-family: $botones;
+            font-size: 19px;
+            opacity: 0.9;
+            line-height: 10px;
+            font-weight: 700;
+            padding: 14px 23px;
+            letter-spacing: 4px;
+            border-radius: 4px;
+            filter: drop-shadow(-1px -6px 0.2px rgba(30, 8, 119, 0.534));
+            }
+        }
+    }
+
+
+@media only screen and (min-width: 1000px) { 
+    nav {
+        ul {
+            li {
+                transition: all 0.2s;
+            &:hover {
+                filter: drop-shadow(0 9px 0.6px);
+                    color: rgb(112, 133, 193);
+                    transition: all 0.2s;
+                    opacity: 1;
+                    }
+                }
+            }   
+        }
+    }

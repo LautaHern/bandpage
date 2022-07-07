@@ -1,8 +1,18 @@
+/* Alineación de los elementos del footer */
+
 .foo {
-    ul {
-        padding: 2px;
-        li {
-            font-family: monospace;
+    div {
+        justify-content: center;
+        a {
+            img {
+                transition: 0.2s;
+                margin-bottom: 20px;
+                &:hover{
+                    transition: 0.2s;
+                    filter: invert(0.85);
+                    transform: scale(1.4); 
+                }
+            }
         }
     }
 }

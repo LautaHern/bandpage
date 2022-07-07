@@ -1,0 +1,26 @@
+/* Responsive Design para mostrar videos */
+
+.videos {
+    div {
+       div {
+            display: flex;
+            width: 370px;
+            margin: 30px 50px;
+            flex-wrap: wrap;
+            &:hover > p {
+                        text-shadow: 
+                                    rgb(200, 214, 216) 0px 0px 5px, 
+                                    rgb(136, 30, 171) 0px 0px 10px,
+                                    #FFF 0px 0px 15px, 
+                                    #4c2dff 0px 0px 20px;
+            }
+            p {
+                text-align: center;
+                width: 370px;
+                padding: 5px;
+                color: #fff;
+                }
+            }
+        }
+        
+}
