@@ -20,6 +20,12 @@
   height: 100%;
   cursor: pointer; }
 
+html, body {
+  overflow-x: hidden; }
+
+body {
+  position: relative; }
+
 /* Fuentes */
 /* Colores de fondo */
 /* Colores de fondo de la página */
